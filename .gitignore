@@ -1,0 +1,14 @@
+# System files
+.DS_STORE
+
+# Secrets/Local Config
+.env
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Compiled / Distribution
+public/
+build/
+dist/
