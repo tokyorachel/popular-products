@@ -5,6 +5,7 @@ import 'normalize.css';
 import './styles/global.css';
 
 import Heading from './components/Heading';
+import { ProductProvider } from './components/ProductContext';
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
 }
 
 ReactDOM.render(
-  <App />,
+  <ProductProvider>
+    <App />
+  </ProductProvider>,
   document.getElementById('root')
 )
