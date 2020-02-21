@@ -1,0 +1,24 @@
+.upvote {
+  background: url('/images/ui/arrow.png') no-repeat center 5px / cover;
+  border: 2px solid transparent;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  width: 36px;
+}
+
+.upvote:hover,
+.upvote:focus {
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-name: floatUp;
+}
+
+@keyframes floatUp {
+  from {
+    background-position-y: 5px;
+  }
+  to {
+    background-position-y: -5px;
+  }
+}

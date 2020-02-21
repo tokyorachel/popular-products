@@ -1,0 +1,10 @@
+.products-list {
+  margin: 0 auto;
+  max-width: 500px;
+  padding-left: 0;
+  width: 80%;
+}
+
+.products-list li {
+  list-style-type: none;
+}
