@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 
 import { ProductContext } from './ProductContext';
 import UpvoteButton from './UpvoteButton';
@@ -35,6 +36,18 @@ const Product = (props) => {
       </div>
     </div>
   )
+}
+
+Product.propTypes = {
+  data: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+    votes: PropTypes.number,
+    submitterAvatarUrl: PropTypes.string,
+    productImageUrl: PropTypes.string
+  })
 }
 
 export default Product;
