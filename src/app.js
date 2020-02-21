@@ -8,7 +8,9 @@ import Heading from './components/Heading';
 
 const App = () => {
   return (
-    <Heading title="Hello, Products App!" />
+    <main>
+      <Heading title="Popular Products" />
+    </main>
   )
 }
 
