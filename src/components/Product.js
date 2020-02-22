@@ -29,7 +29,9 @@ const Product = (props) => {
         <img src={ productImageUrl } alt={`${title}`} />
       </div>
       <div className="details">
-        <div><UpvoteButton callback={ vote } /><span className="count">{ votes }</span></div>
+        <div>
+          <UpvoteButton callback={ vote } /><span className="count">{ votes }</span>
+        </div>
         <a className="title" href={`/${url}`}>{ title }</a>
         <p>{ description }</p>
         <p className="attribution">Submitted by: <img src={ submitterAvatarUrl } alt='User avatar.'/></p>
