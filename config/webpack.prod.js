@@ -16,7 +16,9 @@ module.exports = merge(common, {
       extractComments: false
     })],
   },
-
+  output:{
+    publicPath: './'
+  },
   plugins: [
     new CopyWebpackPlugin([
       {

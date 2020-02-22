@@ -6,8 +6,7 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.join(__dirname, '../', 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -22,7 +21,12 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
-      }
+      },{
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ]
   },
   plugins: [

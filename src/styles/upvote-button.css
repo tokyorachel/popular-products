@@ -1,5 +1,5 @@
 .upvote {
-  background: url('/images/ui/arrow.png') no-repeat center 5px / cover;
+  background: url('../../images/ui/arrow.png') no-repeat center 5px / cover;
   border: 2px solid transparent;
   height: 28px;
   padding: 0;
